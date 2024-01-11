@@ -8,11 +8,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/components/ui/popover';
 
 export default function Home() {
   const [result, setResult] = useState(null);
@@ -100,25 +99,19 @@ export default function Home() {
             </div>
           </div>
           <div className="grid w-full max-w-sm items-center gap-1.5 mb-4">
-            <Label
-              htmlFor="adicion"
-              className="flex flex-row items-center justify-between"
-            >
-              <div>
+            <div className="flex flex-row items-center justify-between">
+              <Label htmlFor="adicion">
                 Adición anual <span className="text-gray-500">(Opcional)</span>
-              </div>
-              <TooltipProvider>
-                <Tooltip>
-                  <TooltipTrigger>?</TooltipTrigger>
-                  <TooltipContent>
-                    <p>
-                      La adición anual es el monto que se agrega a la inversión
-                      inicial cada año.
-                    </p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            </Label>
+              </Label>
+              <Popover>
+                <PopoverTrigger>?</PopoverTrigger>
+                <PopoverContent>
+                  {' '}
+                  La adición anual es el monto que se agrega a la inversión
+                  inicial cada año.
+                </PopoverContent>
+              </Popover>
+            </div>
             <div className="flex flex-row items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
