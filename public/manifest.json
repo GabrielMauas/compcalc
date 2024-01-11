@@ -1,0 +1,9 @@
+{
+  "name": "CompCalc",
+  "short_name": "Calculadora de interés compuesto",
+  "description": "Calculadora de interés compuesto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff"
+}
