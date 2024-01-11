@@ -173,7 +173,7 @@ export default function Home() {
       </Card>
 
       {result && (
-        <Alert className="w-11/12 lg:w-3/12 flex flex-col items-center">
+        <Alert className="w-11/12 lg:w-3/12 flex flex-col items-center border-1 border-[#68d391] shadow-[0px_0px_20px_1px_#68d391] hover:shadow-[0px_0px_25px_5px_#68d391] transition-all duration-300">
           <AlertTitle>Resultado:</AlertTitle>
           <AlertDescription className="flex flex-row items-center gap-1 text-xl font-bold">
             {' '}
