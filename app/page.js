@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import AlertError from '@/components/alerterror';
 import ResultCard from '@/components/resultcard';
