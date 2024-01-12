@@ -29,14 +29,3 @@ const InputField = ({
 };
 
 export default InputField;
-
-{
-  /* <Popover>
-<PopoverTrigger>?</PopoverTrigger>
-<PopoverContent>
-  {' '}
-  La adición anual es el monto que se agrega a la inversión
-  inicial cada año.
-</PopoverContent>
-</Popover> */
-}
