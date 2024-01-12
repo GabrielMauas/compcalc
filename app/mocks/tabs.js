@@ -5,7 +5,7 @@ const tabs = [
     id: 'montofinal',
     filterId2: null,
     description:
-      'Calcula el monto final de una inversión a partir de su capital inicial, tasa de interés, tiempo y aportes adicionales.',
+      'Calcula el monto final de una inversión a partir de su capital inicial, rentabilidad, tiempo y aportes adicionales.',
   },
   {
     key: 2,
@@ -13,23 +13,23 @@ const tabs = [
     id: 'tiempo',
     filterId2: 'adicion',
     description:
-      'Calcula el tiempo que tomará alcanzar un monto final a partir de su capital inicial y la tasa de interés.',
+      'Calcula el tiempo que tomará alcanzar un monto final a partir de su capital inicial y la rentabilidad.',
   },
   {
     key: 3,
-    label: 'Tasa',
+    label: 'Rentabilidad',
     id: 'tasa',
     filterId2: 'adicion',
     description:
-      'Calcula la tasa de interés necesaria para alcanzar cierto monto final a partir del capital inicial y el tiempo.',
+      'Calcula la rentabilidad necesaria para alcanzar cierto monto final a partir del capital inicial y el tiempo.',
   },
   {
     key: 4,
-    label: 'Capital Inicial',
+    label: 'Inversión Inicial',
     id: 'capital',
     filterId2: 'adicion',
     description:
-      'Calcula el capital inicial necesario para alcanzar un monto final a partir de la tasa de interés y el tiempo.',
+      'Calcula la inversión inicial necesaria para alcanzar un monto final a partir de la tasa de interés y el tiempo.',
   },
 ];
 

@@ -169,7 +169,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center py-16 max-w-screen max-h-screen">
+    <main className="flex flex-col items-center py-16 max-w-screen max-h-screen">
       <div className="flex flex-row items-center justify-center gap-2 mb-4">
         <Image
           src="/compcalclogo.svg"
@@ -189,8 +189,8 @@ export default function Home() {
         interés.
       </p>
 
-      <Tabs defaultValue="montofinal" className="w-11/12 lg:w-3/12">
-        <TabsList className="grid w-full grid-cols-4">
+      <Tabs defaultValue="montofinal" className="w-11/12 lg:w-4/12">
+        <TabsList className="grid w-full h-full grid-cols-2 grid-rows-2 gap-y-2 xl:grid-cols-4 xl:grid-rows-1">
           {tabs.map(({ key, label, id }) => (
             <TabsTrigger value={id} key={key}>
               {label}
