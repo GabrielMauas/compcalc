@@ -1,12 +1,18 @@
 {
   "name": "CompCalc",
-  "short_name": "Calculadora de interés compuesto",
+  "short_name": "CompCalc",
   "description": "Calculadora de interés compuesto",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#000",
+  "theme_color": "#000",
   "icons": [
+    {
+      "src": "maskable_icon_x48.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
     {
       "src": "windows11/SmallTile.scale-100.png",
       "sizes": "71x71"
