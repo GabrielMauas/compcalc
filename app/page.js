@@ -14,11 +14,11 @@ export default function Home() {
   const [resultType, setResultType] = useState(null);
   const [error, setError] = useState(null);
 
-  const [capitalValue, setCapitalValue] = useState(null);
-  const [tasaValue, setTasaValue] = useState(null);
-  const [tiempoValue, setTiempoValue] = useState(null);
-  const [adicionValue, setAdicionValue] = useState(null);
-  const [montofinalValue, setMontofinalValue] = useState(null);
+  const [capitalValue, setCapitalValue] = useState(undefined);
+  const [tasaValue, setTasaValue] = useState(undefined);
+  const [tiempoValue, setTiempoValue] = useState(undefined);
+  const [adicionValue, setAdicionValue] = useState(undefined);
+  const [montofinalValue, setMontofinalValue] = useState(undefined);
 
   const inputs = [
     {
