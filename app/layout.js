@@ -28,15 +28,28 @@ export const metadata = {
       url: 'https://www.linkedin.com/in/gabriel-mauas/',
     },
   ],
-  icons: [
-    { rel: 'apple-touch-icon', url: 'compcalclogo.svg' },
-    { rel: 'icon', url: 'compcalclogo.svg' },
-  ],
+  icons: [{ rel: 'apple-touch-icon', url: '/apple-icon.png' }],
+  appleWebApp: {
+    title: 'CompCalc',
+    statusBarStyle: 'black-translucent',
+    startupImage: ['/ios/1024.png'],
+  },
+};
+
+export const viewport = {
+  themeColor: 'black',
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="apple-mobile-web-app-title" content="CompCalc" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+      />
+
       <body className={inter.className}>{children}</body>
       <Analytics />
       <SpeedInsights />

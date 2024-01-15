@@ -8,6 +8,7 @@ import SocialIcon from '@/components/socialicon';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import FormCard from '@/components/formcard';
 import { socials, tabs } from './mocks';
+import iconPic from './apple-icon.png';
 
 export default function Home() {
   const [result, setResult] = useState(null);
@@ -171,12 +172,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center py-16 max-w-screen max-h-screen">
       <div className="flex flex-row items-center justify-center gap-2 mb-4">
-        <Image
-          src="/compcalclogo.svg"
-          width={50}
-          height={50}
-          alt="CompCalc Logo"
-        />
+        <Image src={iconPic} width={50} height={50} alt="CompCalc Logo" />
         <h1 className="text-4xl font-bold text-center">CompCalc</h1>
       </div>
       <p className="text-center text-xl mb-8">
